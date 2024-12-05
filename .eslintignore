@@ -1,0 +1,7 @@
+dist
+node_modules
+unpackage
+docs
+.nuxt
+.output
+docs/zebra-axios-docs/content

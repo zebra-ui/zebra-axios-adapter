@@ -1,0 +1,94 @@
+{
+  "name": "@zebra-ui/axios-adapter",
+  "version": "1.0.0",
+  "description": "Axios adapter for UniApp",
+  "private": false,
+  "packageManager": "pnpm@9.12.2",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./core": {
+      "types": "./dist/core/index.d.ts",
+      "default": "./dist/core/index.js"
+    },
+    "./utils": {
+      "types": "./dist/utils/index.d.ts",
+      "default": "./dist/utils/index.js"
+    }
+  },
+  "scripts": {
+    "async": "node scripts/async",
+    "build": "pnpm -r build",
+    "dev": "pnpm --filter example dev",
+    "clean": "rimraf dist",
+    "prebuild": "pnpm clean",
+    "build:ts": "pnpm clean && tsc -p tsconfig.build.json",
+    "pack:test": "pnpm build:ts && pnpm pack",
+    "update:example": "pnpm build:ts && cd example && pnpm install",
+    "prepare": "husky",
+    "prepublishOnly": "pnpm build:ts",
+    "lint:eslint": "eslint --cache --max-warnings 0  \"**/*.{vue,js,ts,tsx}\" --fix",
+    "lint:prettier": "prettier --write  \"**/*.{js,ts,json,tsx,css,scss,vue,html,md}\"",
+    "lint:styles": "stylelint --cache --fix \"**/*.{html,vue,css,scss}\" --cache-location node_modules/.cache/stylelint/",
+    "lint:lint-staged": "lint-staged",
+    "lint": "pnpm lint:eslint && pnpm lint:prettier && pnpm lint:styles",
+    "commit": "git status && git add . && git-cz",
+    "auto-changelog": "auto-changelog",
+    "docs": "pnpm --dir ./docs/zebra-ui-docs dev",
+    "example": "pnpm --dir ./example/v3-cli dev:h5"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.1.0",
+    "@dcloudio/types": "^3.4.3",
+    "@types/uni-app": "^1.4.4",
+    "axios": "1.6.8",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "auto-changelog": "^2.4.0",
+    "commitizen": "^4.3.0",
+    "cz-git": "^1.9.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-vue": "^9.23.0",
+    "fs-extra": "^11.2.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "signale": "^1.4.0",
+    "stylelint": "^16.2.1",
+    "stylelint-config-html": "^1.1.0",
+    "stylelint-config-recess-order": "^5.0.0",
+    "stylelint-config-recommended-vue": "^1.5.0",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-config-standard-scss": "^13.0.0",
+    "stylelint-prettier": "^5.0.0",
+    "stylelint-scss": "^6.2.1",
+    "typescript": "^5.3.3"
+  },
+  "peerDependencies": {
+    "axios": ">=1.0.0 <=1.6.8"
+  },
+  "keywords": [
+    "axios",
+    "adapter",
+    "uniapp",
+    "zebraui",
+    "zebra-ui"
+  ],
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
+  "license": "MIT"
+}
