@@ -25,6 +25,9 @@ jobs:
           cache: 'pnpm'
 
       - name: Install dependencies
+        run: pnpm install
+
+      - name: Install Docs dependencies
         run: npm install
         working-directory: docs/zebra-axios-docs
 

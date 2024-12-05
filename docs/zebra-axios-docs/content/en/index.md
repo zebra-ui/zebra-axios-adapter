@@ -6,8 +6,21 @@
   </div>
 </div>
 
-### 介绍
+### Introduce
 
 [zebra-axios-adapter](https://axios.zebraui.com/) is an [Axios](https://axios-http.com/) adapter for UniApp, supporting mini-programs, H5 and App platforms.
 
 Axios is a promise-based network request library that works in node.js and browsers. Due to the different request mechanisms of mini-programs, Axios cannot be used directly in mini-programs. This adapter is designed to solve this problem.
+
+### Features
+
+- 💪 Full TypeScript support.
+- 🔨 Supports all UniApp platforms (Mini Programs, H5, Apps).
+- 🎨 Supports file upload and download.
+- 🚀 Supports upload/download progress monitoring.
+- 🍭 Supports request and response interceptors.
+- ⚡️ Supports request timeout configuration.
+- 🍭 Supports baseURL.
+- ⚡️ Supports validateStatus custom validation.
+- ⚡️ Supports responseType configuration.
+- 📖 Complete error handling.
