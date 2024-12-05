@@ -20,12 +20,13 @@
           >
             <a class="zebra-doc-header__link" target="_blank" :href="item.url">
               <!-- <img v-if="item.logo" :src="item.logo" /> -->
-              <UIcon
-                v-if="item.logo"
-                :name="getIconName(item.logo)"
-                dynamic
-                class="zebra-doc-header__link--icon"
-              />
+              <div v-if="item.logo" class="zebra-doc-header__link--content">
+                <UIcon
+                  :name="getIconName(item.logo)"
+                  dynamic
+                  class="zebra-doc-header__link--icon"
+                />
+              </div>
               <span v-else-if="item.text">
                 {{ item.text }}
               </span>
@@ -38,11 +39,13 @@
               target="_blank"
               @click="toggleTheme"
             >
-              <UIcon
-                :name="themeImg"
-                dynamic
-                class="zebra-doc-header__link--icon"
-              />
+              <div class="zebra-doc-header__link--content">
+                <UIcon
+                  :name="themeImg"
+                  dynamic
+                  class="zebra-doc-header__link--icon"
+                />
+              </div>
               <!-- <img :src="themeImg" /> -->
             </a>
           </li>
@@ -368,21 +371,24 @@ watch(
     cursor: pointer;
     color: var(--zebra-doc-text-color-1);
 
-    &--icon {
-      color: var(--zebra-doc-text-color-1);
-      font-size: 24px;
+    &--content {
       display: block;
-      width: 34px;
-      height: 34px;
-      padding: 6px;
       box-sizing: border-box;
       transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
       box-shadow: var(--box-shadow);
       border-radius: var(--neumorphism-border-radius);
+      width: 34px;
+      height: 34px;
+      padding: 6px;
+    }
 
-      &:hover {
-        transform: scale(1.2);
-      }
+    &--icon {
+      color: var(--zebra-doc-text-color-1);
+      font-size: 24px;
+    }
+
+    &--content:hover {
+      transform: scale(1.2);
     }
   }
 }

@@ -1,7 +1,7 @@
 <div class="zebra-doc-card">
   <div class="zebra-doc-intro">
     <img class="zebra-doc-intro__logo" style="width: 480px; height: 180px;" src="https://assets-1256020106.file.myqcloud.com/zebra-axios/axios-to-uniapp.svg">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">ZebraAxiosAdapter</h2>
+    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">zebra-axios-adapter</h2>
     <p>一个用于 UniApp 的 Axios 适配器，支持小程序、H5 和 App 平台。</p>
   </div>
 </div>

@@ -134,4 +134,19 @@ function setTitleAndToggleSimulator() {
     margin-bottom: 20px;
   }
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #caccce;
+  border-radius: 15px;
+  background-clip: content-box;
+  border: 2px solid transparent;
+}
 </style>

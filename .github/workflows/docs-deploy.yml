@@ -53,4 +53,4 @@ jobs:
             docker stop zebra-axios-docs-docker
             docker rm -f zebra-axios-docs-docker
             docker build -t zebra-axios-docs-docker .
-            docker run --name zebra-axios-docs-docker -d -p 3021:3021 zebra-axios-docs-docker
+            docker run --name zebra-axios-docs-docker -d -p 3021:3021 -e PORT=3021 zebra-axios-docs-docker
