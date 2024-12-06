@@ -24,7 +24,7 @@ async function main() {
   try {
     await runScript('updateChangelog.js')
     await runScript('updateVersion.js')
-    await runScript('publish.js')
+    // await runScript('publish.js')
     await runScript('commitToGithub.js')
     // 在这里可以添加更多脚本
     signale.complete('所有脚本已成功执行！')

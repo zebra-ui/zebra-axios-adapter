@@ -1,12 +1,16 @@
 {
   "id": "zebra-axios-adapter",
-  "displayName": "zebra-axios-adapter",
-  "version": "1.0.0",
-  "description": "zebra-axios-adapter",
+  "displayName": "zebra-axios-adapter 快速实现接口拦截，规范接口管理。",
+  "version": "1.0.1",
+  "description": "一个用于 UniApp 的 Axios 适配器，快速实现接口拦截，规范接口管理。支持小程序、H5 和 App 平台。",
   "keywords": [
-    "zebra-axios-adapter"
-  ],
-  "repository": "",
+    "zebra",
+    "axios",
+    "axios-adapter",
+    "request",
+    "接口拦截"
+],
+  "repository": "https://github.com/zebra-ui/zebra-axios-adapter",
   "engines": {
     "HBuilderX": "^3.1.0"
   },
@@ -24,54 +28,55 @@
       "qq": ""
     },
     "declaration": {
-      "ads": "",
-      "data": "",
-      "permissions": ""
+      "ads": "无",
+      "data": "插件不采集任何数据",
+      "permissions": "无"
     },
-    "npmurl": ""
+    "npmurl": "https://www.npmjs.com/package/@zebra-ui/axios-adapter"
   },
   "uni_modules": {
     "dependencies": [],
     "encrypt": [],
     "platforms": {
       "cloud": {
-        "tcb": "u",
-        "aliyun": "u",
-        "alipay": "u"
+        "tcb": "y",
+        "aliyun": "y",
+        "alipay": "y"
       },
       "client": {
         "Vue": {
-          "vue2": "u",
-          "vue3": "u"
+          "vue2": "y",
+          "vue3": "y"
         },
         "App": {
-          "app-vue": "u",
-          "app-nvue": "u",
-          "app-uvue": "u"
+            "app-vue": "y",
+            "app-nvue": "y",
+            "app-uvue": "u",
+            "app-harmony": "u"
         },
         "H5-mobile": {
-          "Safari": "u",
-          "Android Browser": "u",
-          "微信浏览器(Android)": "u",
-          "QQ浏览器(Android)": "u"
+          "Safari": "y",
+          "Android Browser": "y",
+          "微信浏览器(Android)": "y",
+          "QQ浏览器(Android)": "y"
         },
         "H5-pc": {
-          "Chrome": "u",
-          "IE": "u",
-          "Edge": "u",
-          "Firefox": "u",
-          "Safari": "u"
+          "Chrome": "y",
+          "IE": "y",
+          "Edge": "y",
+          "Firefox": "y",
+          "Safari": "y"
         },
         "小程序": {
-          "微信": "u",
-          "阿里": "u",
-          "百度": "u",
-          "字节跳动": "u",
-          "QQ": "u",
-          "钉钉": "u",
-          "快手": "u",
-          "飞书": "u",
-          "京东": "u"
+          "微信": "y",
+          "阿里": "y",
+          "百度": "y",
+          "字节跳动": "y",
+          "QQ": "y",
+          "钉钉": "y",
+          "快手": "y",
+          "飞书": "y",
+          "京东": "y"
         },
         "快应用": {
           "华为": "u",

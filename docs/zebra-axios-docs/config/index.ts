@@ -18,7 +18,7 @@ export default {
         links: [
           {
             logo: 'uni',
-            url: 'https://ext.dcloud.net.cn/plugin?id=17407'
+            url: 'https://ext.dcloud.net.cn/plugin?id=21308'
           },
           {
             logo: 'github',
@@ -70,7 +70,7 @@ export default {
         links: [
           {
             logo: 'uni',
-            url: 'https://ext.dcloud.net.cn/plugin?id=17407'
+            url: 'https://ext.dcloud.net.cn/plugin?id=21308'
           },
           {
             logo: 'github',

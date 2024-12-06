@@ -1,10 +1,16 @@
-<div class="zebra-doc-card">
-  <div class="zebra-doc-intro">
-    <img class="zebra-doc-intro__logo" style="width: 480px; height: 180px;" src="https://assets-1256020106.file.myqcloud.com/zebra-axios/axios-to-uniapp.svg">
-    <h2 style="margin: 0; font-size: 36px; line-height: 60px;">zebra-axios-adapter</h2>
-    <p>一个用于 UniApp 的 Axios 适配器，支持小程序、H5 和 App 平台。</p>
-  </div>
-</div>
+<p align="center">
+	<img alt="logo" src="https://assets-1256020106.file.myqcloud.com/zebra-axios/axios-to-uniapp.svg" width="480" style="margin-bottom: 10px;">
+</p>
+<h1 align="center">zebra-axios-adapter</h1>
+
+<p align="center">一个用于 UniApp 的 Axios 适配器，支持小程序、H5 和 App 平台。</p>
+
+<p align="center">
+	🔥 <a href="https://axios.zebraui.com/">文档网站</a>
+	&nbsp;
+	&nbsp;
+	🚀 <a href="https://zebraui.com/" target="_blank">zebraUI</a>
+</p>
 
 ### 介绍
 
@@ -29,10 +35,8 @@ Axios 是一个基于 promise 网络请求库，作用于node.js 和浏览器中
 
 ### 通过 npm 安装
 
-
 > **注意:** axios版本最高支持1.6.8，高于此版本在支付宝小程序中会出现异常。zebra-axios-adapter已经通过peerDependencies做了限制。
-如果已经安装了axios，请先卸载后重新安装。
-
+> 如果已经安装了axios，请先卸载后重新安装。
 
 在现有项目中使用 ZebraAxios 时，可以通过 `npm` 进行安装（同时安装axios）：
 
@@ -138,6 +142,4 @@ instance.delete('/users/1')
 
 QQ群：947159437 [点击加入](http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=j0ofK9kA3Um4GXM3mdu0SNFUCOPTapGK&authKey=C%2Fr2jznrkjfCNen37FXpfR30fXpz2piJVCHkDTLHepAoq5OtZxtKXHJc%2BCZ77qFF&noverify=0&group_code=947159437)
 
-<img alt="image" src="https://assets-1256020106.file.myqcloud.com/zebra-ui/source/zebra-qq-code.jpg" style="width:300px" />
-
-
+<img alt="image" src="https://assets-1256020106.file.myqcloud.com/zebra-ui/source/zebra-qq-code.jpg" width="300px" style="width:300px" />
