@@ -42,6 +42,10 @@ export default {
                 title: '快速上手'
               },
               {
+                path: 'basic-usage',
+                title: '基础用法'
+              },
+              {
                 path: 'advanced-usage',
                 title: '进阶用法'
               },
@@ -88,6 +92,10 @@ export default {
               {
                 path: 'quickstart',
                 title: 'Quickstart'
+              },
+              {
+                path: 'basic-usage',
+                title: 'Basic Usage'
               },
               {
                 path: 'advanced-usage',

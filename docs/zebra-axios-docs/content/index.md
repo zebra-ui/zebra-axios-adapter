@@ -25,10 +25,53 @@ Axios 是一个基于 promise 网络请求库，作用于node.js 和浏览器中
 - ⚡️ 支持 responseType 配置。
 - 📖 完善的错误处理。
 
-### 安装
+## 安装
+
+### 通过 npm 安装
+
+
+> **注意:** axios版本最高支持1.6.8，高于此版本在支付宝小程序中会出现异常。zebra-axios-adapter已经通过peerDependencies做了限制。
+如果已经安装了axios，请先卸载后重新安装。
+
+
+在现有项目中使用 ZebraAxios 时，可以通过 `npm` 进行安装（同时安装axios）：
 
 ```bash
-npm install axios-uniapp-adapter axios
+npm i @zebra-ui/axios-adapter axios
+```
+
+也可以通过 `pnpm` 进行安装：
+
+```bash
+# 通过 pnpm 安装
+pnpm add @zebra-ui/axios-adapter axios
+```
+
+之后引入适配器
+
+```ts
+import { uniappAdapter, createRequest } from '@zebra-ui/axios-adapter'
+```
+
+使用适配器
+
+```ts
+// 创建 axios 实例
+const axiosInstance = axios.create({
+  baseURL: 'https://jsonplaceholder.typicode.com',
+  timeout: 10000,
+  adapter: uniappAdapter
+})
+```
+
+### 通过 uni_modules 安装
+
+[zebra-axios](https://ext.dcloud.net.cn/plugin?id=17407)已经在uniapp的[插件市场](https://ext.dcloud.net.cn/plugin?id=17407)发布。
+
+如果使用的`IDE`为`HbuilderX`，则可以通过uniapp的[插件市场](https://ext.dcloud.net.cn/plugin?id=17407)进行sdk导入。
+
+```ts
+import { uniappAdapter, createRequest } from '@/uni_modules/zebra-axios-adapter'
 ```
 
 ### 基本使用

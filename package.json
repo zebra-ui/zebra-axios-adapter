@@ -42,8 +42,9 @@
     "lint": "pnpm lint:eslint && pnpm lint:prettier && pnpm lint:styles",
     "commit": "git status && git add . && git-cz",
     "auto-changelog": "auto-changelog",
-    "docs": "pnpm --dir ./docs/zebra-ui-docs dev",
-    "example": "pnpm --dir ./example/v3-cli dev:h5"
+    "docs": "pnpm --dir ./docs/zebra-axios-docs dev",
+    "example": "pnpm --dir ./example/v3-cli dev:h5",
+    "release": "node scripts/release"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
